@@ -1,7 +1,11 @@
 language: node_js
 
 node_js:
-  - "6"
+  - "lts/boron"
+  - "lts/argon"
+
+script:
+  - npm run test-functional
 
 branches:
   only:
